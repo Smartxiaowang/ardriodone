@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="投递记录"
+        android:textColor="@color/black"
+        android:textSize="30dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tdjl"
+        android:layout_width="match_parent"
+        android:layout_height="507dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ImageButton
+
+            android:id="@+id/qy"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/qy"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/message"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/toudi"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/jl"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/jl"></ImageButton>
+
+    </LinearLayout>
+</LinearLayout>

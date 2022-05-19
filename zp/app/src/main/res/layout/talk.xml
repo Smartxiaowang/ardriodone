@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ltdname"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="京东"
+        android:textColor="@color/black"
+        android:textSize="30dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/talk"
+        android:layout_width="match_parent"
+        android:layout_height="507dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edittalk"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_editstyle"
+            android:layout_weight="2"
+            ></EditText>
+        <ImageView
+            android:id="@+id/sendtalk"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@mipmap/send"
+            >
+
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>

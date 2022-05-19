@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/zp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1295" />
+        <entry key="..\:/zp/app/src/main/res/drawable/round_editstyle.xml" value="0.188" />
+        <entry key="..\:/zp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/zp/app/src/main/res/layout/forgetpassword.xml" value="0.264" />
+        <entry key="..\:/zp/app/src/main/res/layout/gangweilist.xml" value="0.15151515151515152" />
+        <entry key="..\:/zp/app/src/main/res/layout/jl.xml" value="0.184375" />
+        <entry key="..\:/zp/app/src/main/res/layout/login.xml" value="0.264" />
+        <entry key="..\:/zp/app/src/main/res/layout/message.xml" value="0.1" />
+        <entry key="..\:/zp/app/src/main/res/layout/messagelist.xml" value="0.264" />
+        <entry key="..\:/zp/app/src/main/res/layout/myself.xml" value="0.264" />
+        <entry key="..\:/zp/app/src/main/res/layout/register.xml" value="0.264" />
+        <entry key="..\:/zp/app/src/main/res/layout/round_editstyle.xml" value="0.2390625" />
+        <entry key="..\:/zp/app/src/main/res/layout/seach.xml" value="0.2" />
+        <entry key="..\:/zp/app/src/main/res/layout/serachres.xml" value="0.1388888888888889" />
+        <entry key="..\:/zp/app/src/main/res/layout/serachreslist.xml" value="0.536" />
+        <entry key="..\:/zp/app/src/main/res/layout/talk.xml" value="0.264" />
+        <entry key="..\:/zp/app/src/main/res/layout/talklist.xml" value="0.4" />
+        <entry key="..\:/zp/app/src/main/res/layout/updmyself.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
