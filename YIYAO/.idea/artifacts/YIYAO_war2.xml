@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="YIYAO:war2">
+    <output-path>$PROJECT_DIR$/../de/artifacts/YIYAO_war2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="YIYAO" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="YIYAO/web/Web" />
+    </root>
+  </artifact>
+</component>
