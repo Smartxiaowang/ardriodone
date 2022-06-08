@@ -1,5 +1,7 @@
 package servlet;
 
+import entity.CommandDao;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,8 +11,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import entity.CommandDao;
 
 /**
  * Servlet implementation class addCommand
@@ -35,15 +35,11 @@ public class addCommand extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		ServletContext ctx=request.getServletContext();
-		String server=ctx.getInitParameter("server");
-		String dbname=ctx.getInitParameter("db");
-		String user=ctx.getInitParameter("user");
-		String pwd=ctx.getInitParameter("pwd");
-		
+
 //		只能删除当前电影的评论
-		int mId =1;
+		int mId =Integer.parseInt(request.getParameter("mid"));
 //		只能自己的评论
-		int uId=3;
+		int uId= Integer.parseInt(request.getParameter("uid"));
 		
 //		获取当前时间
 		Date curTime=new Date();
@@ -52,11 +48,11 @@ public class addCommand extends HttpServlet {
 		String cWord = request.getParameter("content");
 //		连接数据库，插入一条评论
 		CommandDao dao=new CommandDao();
-		dao.getConnection(server, dbname, user, pwd);
+		//dao.getConnection(server, dbname, user, pwd);
 		if(dao.add(uId, mId, cWord, cTime)){
-			response.sendRedirect("Command.jsp");
+			response.sendRedirect("Command.jsp?id="+mId);
 		}else{
-			
+			response.sendRedirect("Command.jsp?id="+mId);
 		}
 	}
 

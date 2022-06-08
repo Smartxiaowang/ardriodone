@@ -12,7 +12,7 @@
 		<div class="row" style="margin-top: 80px">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-primary">
-					<div class="panel-heading">添加用户</div>
+					<div class="panel-heading">修改用户</div>
 					<div class="panel-body">
 						<form action="${pageContext.request.contextPath}/upd" method="post"  >
 							<div class="form-group">

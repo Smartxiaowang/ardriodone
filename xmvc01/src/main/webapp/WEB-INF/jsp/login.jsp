@@ -25,11 +25,11 @@
 									value="" >
 							</div>
 							<div class="form-inline text-right">
-								<button type="submit" class="btn btn-primary" onclick="gonext()">登录</button>
-								<button type="reset" class="btn btn-default" focus>重置</button>
-
+								<button type="submit" class="btn btn-primary" >登录</button>
+								<button type="button" class="btn btn-default" onclick="gonext()">注册</button>
 							</div>
 						</form>
+
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 </body>
 <script>
 	function gonext() {
-
+		window.location="insert";
 	}
 
 </script>

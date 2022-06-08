@@ -1,7 +1,9 @@
 package bean;
 
 
-public class ShoppingBean {
+import java.io.Serializable;
+
+public class ShoppingBean implements Serializable {
 
     private String bid;
     private String name;

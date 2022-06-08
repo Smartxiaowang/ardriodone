@@ -419,7 +419,7 @@
 
     <!-------------------------个人资料模糊框------------------------------------->
 
-    <form class="form-horizontal" method="post" action="/jiudain/AdminServlet">   <!--保证样式水平不混乱-->
+    <form class="form-horizontal" method="post" action="AdminServlet">   <!--保证样式水平不混乱-->
         <!-- 模态框（Modal） -->
         <div class="modal fade" id="updateinfo" tabindex="-1" role="dialog" aria-labelledby="updateinfoLabel"
              aria-hidden="true">

@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
             //根据用户名查询具体信息
             User readyLoginUser = getUser(user.getUserName());
             //比对密码是否相同 相同返回真
-            if (user.getPassword().equals(readyLoginUser.getPassword())) {
+            if (readyLoginUser!=null && user.getPassword().equals(readyLoginUser.getPassword())) {
                 return true;
             }
         }

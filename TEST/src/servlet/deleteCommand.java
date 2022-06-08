@@ -1,5 +1,7 @@
 package servlet;
 
+import entity.CommandDao;
+
 import java.io.IOException;
 
 import javax.servlet.ServletContext;
@@ -7,8 +9,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import entity.CommandDao;
 
 /**
  * Servlet implementation class deleteCommand
@@ -33,16 +33,13 @@ public class deleteCommand extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		ServletContext ctx=request.getServletContext();
-		String server=ctx.getInitParameter("server");
-		String dbname=ctx.getInitParameter("db");
-		String user=ctx.getInitParameter("user");
-		String pwd=ctx.getInitParameter("pwd");
 		String cId=request.getParameter("cId");
-//		Á¬½ÓÊý¾Ý¿â£¬É¾³ý¼ÇÂ¼
+		String mId=request.getParameter("mId");
+//		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿â£¬É¾ï¿½ï¿½ï¿½ï¿½Â¼
 		CommandDao dao =new CommandDao();
-		dao.getConnection(server, dbname, user, pwd);
+		//dao.getConnection(server, dbname, user, pwd);
 		if(dao.delete(cId)){
-			response.sendRedirect("Command.jsp");
+			response.sendRedirect("Command.jsp?id="+mId);
 		}
 	}
 

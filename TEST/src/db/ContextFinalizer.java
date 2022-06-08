@@ -14,18 +14,19 @@ public class ContextFinalizer implements ServletContextListener {
 
     public void contextInitialized(ServletContextEvent sce) {
     }
+
     public void contextDestroyed(ServletContextEvent sce) {
         Enumeration<Driver> drivers = DriverManager.getDrivers();
         Driver d = null;
         while (drivers.hasMoreElements()) {
-        try {
-               d = drivers.nextElement();
-               DriverManager.deregisterDriver(d);
-               System.out.println(String.format("ContextFinalizer:Driver %s deregistered", d));
-        } catch (SQLException ex) {
-               System.out.println(String.format("ContextFinalizer:Error deregistering driver %s", d) + ":" + ex);
+            try {
+                d = drivers.nextElement();
+                DriverManager.deregisterDriver(d);
+                System.out.println(String.format("ContextFinalizer:Driver %s deregistered", d));
+            } catch (SQLException ex) {
+                System.out.println(String.format("ContextFinalizer:Error deregistering driver %s", d) + ":" + ex);
+            }
+
         }
-        
-         }
-          }
+    }
 }

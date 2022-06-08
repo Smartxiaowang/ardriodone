@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/db/DBOper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/db/DBUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/entity/CommandDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/entity/MovieDao.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/servlet/addCommand.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/servlet/deleteCommand.java" charset="GBK" />
   </component>
 </project>
